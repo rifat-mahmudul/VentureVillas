@@ -1,0 +1,25 @@
+.slide1{
+    background-image: url(../src/assets/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.676);
+    background-blend-mode: overlay;
+}
+
+.slide2{
+    background-image: url(../src/assets/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.676);
+    background-blend-mode: overlay;
+}
+.slide3{
+    background-image: url(../src/assets/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.676);
+    background-blend-mode: overlay;
+}
