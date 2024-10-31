@@ -22,14 +22,14 @@ const Banner = () => {
             onSlideChange={() => console.log('slide change')}
             >
             <SwiperSlide>
-                <div className="slide1 flex flex-col items-center justify-center h-[calc(100vh-97px)] rounded-lg px-3">
+                <div className="slide1 flex flex-col items-center justify-center h-[calc(100vh-97px)] rounded-lg">
                     <div className=''>
                         <h1 className='text-white text-xl sm:text-3xl lg:text-5xl font-bold max-w-screen-md text-center'>Welcome to <span
                                     className="font-bold bg-gradient-to-r from-purple-600 via-gray-500 to-indigo-600 text-transparent bg-clip-text animate-gradient bg-300%"
                                     >
                                     VENTUREVILLAS
                                     </span>: Where Every Stay Feels Like Home</h1>
-                        <p className='text-gray-300 max-w-screen-md text-center mt-4 sm:mt-5'>Discover a Haven of Elegance and Serenity, Where Every Detail is Curated to Enhance Your Comfort. Step into a World of Warm, Personalized Service, and Unmatched Luxury. Here, Every Stay Transcends the Ordinary, Crafting Lasting Memories with Exceptional Care and Attention, All Tailored to Make You Feel at Home.</p>
+                        <p className='text-gray-300 max-w-screen-md text-center sm:mt-5'>Discover a Haven of Elegance and Serenity, Where Every Detail is Curated to Enhance Your Comfort. Step into a World of Warm, Personalized Service, and Unmatched Luxury. Here, Every Stay Transcends the Ordinary, Crafting Lasting Memories with Exceptional Care and Attention, All Tailored to Make You Feel at Home.</p>
                         <div className='text-center mt-4'>
                             <button className="relative inline-flex items-center justify-center px-6 py-3 text-lg font-medium tracking-tighter text-white bg-gray-800 rounded-md group">
                                 <span className="absolute inset-0 w-full h-full mt-1 ml-1 transition-all duration-300 ease-in-out bg-purple-600 rounded-md group-hover:mt-0 group-hover:ml-0"></span>
@@ -42,7 +42,7 @@ const Banner = () => {
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="slide2 flex flex-col items-center justify-center h-[calc(100vh-97px)] rounded-lg px-3">
+                <div className="slide2 flex flex-col items-center justify-center h-[calc(100vh-97px)] rounded-lg">
                         <div className=''>
                             <h1 className='text-white text-xl sm:text-3xl lg:text-5xl font-bold max-w-screen-md text-center'>Experience Elegance & Comfort at <span
                                         className="font-bold bg-gradient-to-r from-purple-600 via-gray-500 to-indigo-600 text-transparent bg-clip-text animate-gradient bg-300%"
@@ -65,7 +65,7 @@ const Banner = () => {
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="slide3 flex flex-col items-center justify-center h-[calc(100vh-97px)] rounded-lg px-3">
+                <div className="slide3 flex flex-col items-center justify-center h-[calc(100vh-97px)] rounded-lg">
                             <div className=''>
                                 <h1 className='text-white text-xl sm:text-3xl lg:text-5xl font-bold max-w-screen-md text-center'>Escape to Tranquility: Discover <span
                                             className="font-bold bg-gradient-to-r from-purple-600 via-gray-500 to-indigo-600 text-transparent bg-clip-text animate-gradient bg-300%"
