@@ -22,7 +22,7 @@ const Banner = () => {
             <SwiperSlide>
                 <div className="slide1 flex flex-col items-center justify-center h-[calc(100vh-97px)] rounded-lg">
                     <div className=''>
-                        <h1 className='text-white text-xl sm:text-3xl lg:text-5xl font-bold max-w-screen-md text-center'>Welcome to <span
+                        <h1 className='text-white text-2xl sm:text-3xl lg:text-5xl font-bold max-w-screen-md text-center'>Welcome to <span
                                     className="font-bold bg-gradient-to-r from-purple-600 via-gray-500 to-indigo-600 text-transparent bg-clip-text animate-gradient bg-300%"
                                     >
                                     VENTUREVILLAS

@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unknown-property */
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { TbMenuDeep } from "react-icons/tb";
 import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
@@ -12,10 +12,10 @@ const Nav = () => {
         <header className="font-Roboto sticky top-0 z-50 backdrop-blur-lg">
             <div className="max-w-[90%] xl:max-w-[1200px] mx-auto flex items-center justify-between py-5">
                 <div>
-                    <h1 className="font-bold text-xl sm:text-2xl">
+                    <Link to='/' className="font-bold text-xl sm:text-2xl">
                         <span className="text-indigo-600">VENTURE</span>
                         <span className="text-purple-600">VILLAS</span>
-                    </h1>
+                    </Link>
                 </div>
                 
                 <div>
