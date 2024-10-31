@@ -18,8 +18,6 @@ const Banner = () => {
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}
             >
             <SwiperSlide>
                 <div className="slide1 flex flex-col items-center justify-center h-[calc(100vh-97px)] rounded-lg">
