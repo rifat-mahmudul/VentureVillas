@@ -32,7 +32,7 @@ export const router = createBrowserRouter([
             {
                 path : '/room/:id',
                 element : <RoomDetails></RoomDetails>,
-                loader : () => fetch('./Data.json')
+                loader : () => fetch('/Data.json')
             },
         ]
     },
