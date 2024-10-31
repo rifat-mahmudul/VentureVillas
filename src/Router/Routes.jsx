@@ -6,6 +6,7 @@ import Home from "../pages/Home";
 import ContactUs from "../pages/ContactUs";
 import UpdateProfile from "../pages/UpdateProfile";
 import Login from "../pages/Login";
+import RoomDetails from "../components/RoomDetails";
 
 export const router = createBrowserRouter([
     {
@@ -27,7 +28,12 @@ export const router = createBrowserRouter([
             {
                 path : '/login',
                 element : <Login></Login>
-            }
+            },
+            {
+                path : '/room/:id',
+                element : <RoomDetails></RoomDetails>,
+                loader : () => fetch('./Data.json')
+            },
         ]
     },
 ]);

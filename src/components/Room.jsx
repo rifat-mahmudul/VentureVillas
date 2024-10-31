@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Room = ({room}) => {
 
-    const {estate_title, image, segment_name, price, status, area, location} = room;
+    const {id, estate_title, image, segment_name, price, status, area, location} = room;
 
     return (
         
@@ -24,7 +24,7 @@ const Room = ({room}) => {
                     <h3><span className='font-bold'>Area :</span> {area}</h3>
                 </div>
 
-                <NavLink>
+                <NavLink to={`room/${id}`}>
                     <div className='bg-gradient-to-r from-indigo-600 via-gray-500 to-purple-600 w-full text-white font-bold text-center py-3 rounded-lg mt-5'>
                             <button>View Property</button>
                     </div>
