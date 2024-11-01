@@ -8,6 +8,7 @@ import UpdateProfile from "../pages/UpdateProfile";
 import Login from "../pages/Login";
 import RoomDetails from "../components/RoomDetails";
 import Register from "../pages/Register";
+import ProfileUpdate from "../components/ProfileUpdate";
 
 export const router = createBrowserRouter([
     {
@@ -38,7 +39,11 @@ export const router = createBrowserRouter([
             {
                 path : '/register',
                 element : <Register></Register>
-            }
+            },
+            {
+                path : '/profileUpdate',
+                element : <ProfileUpdate></ProfileUpdate>
+            },
         ]
     },
 ]);
