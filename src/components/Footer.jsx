@@ -1,5 +1,3 @@
-
-
 const Footer = () => {
     return (
     <footer className="px-4 divide-y bg-gray-800 text-gray-100">

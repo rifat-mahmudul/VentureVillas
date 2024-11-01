@@ -7,6 +7,7 @@ import ContactUs from "../pages/ContactUs";
 import UpdateProfile from "../pages/UpdateProfile";
 import Login from "../pages/Login";
 import RoomDetails from "../components/RoomDetails";
+import Register from "../pages/Register";
 
 export const router = createBrowserRouter([
     {
@@ -34,6 +35,10 @@ export const router = createBrowserRouter([
                 element : <RoomDetails></RoomDetails>,
                 loader : () => fetch('/Data.json')
             },
+            {
+                path : '/register',
+                element : <Register></Register>
+            }
         ]
     },
 ]);
