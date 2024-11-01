@@ -34,12 +34,14 @@ const Nav = () => {
                             <NavLink className={({isActive}) => isActive ? `text-indigo-600 border-b-2 border-purple-600 font-bold` : `font-semibold`} to='/'>Home</NavLink>
                             <NavLink className={({isActive}) => isActive ? `text-indigo-600 border-b-2 border-purple-600 font-bold` : `font-semibold`} to="/about">About</NavLink>
                             <NavLink className={({isActive}) => isActive ? `text-indigo-600 border-b-2 border-purple-600 font-bold` : `font-semibold`} to='/contactUs'>Contact us</NavLink>
-                            <NavLink className={({isActive}) => isActive ? `text-indigo-600 border-b-2 border-purple-600 font-bold` : `font-semibold`} to="/updateProfile">Update Profile</NavLink>
+                            
 
                             {
                                 user 
                                 ?
                                 <>
+                                <NavLink className={({isActive}) => isActive ? `text-indigo-600 border-b-2 border-purple-600 font-bold` : `font-semibold`} to="/updateProfile">Update Profile</NavLink>
+                                
                                     <div className="relative group h-12 w-12 rounded-full border border-indigo-500">
                                         <img className="w-full h-full rounded-full" src={user?.photoURL} alt="" />
 
