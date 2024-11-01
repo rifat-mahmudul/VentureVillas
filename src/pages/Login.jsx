@@ -19,7 +19,9 @@ const Login = () => {
         })
         .catch(error => {
             console.log(`Error from log in page : ${error}`)
-        })
+        });
+
+        form.reset();
     }
 
     return (

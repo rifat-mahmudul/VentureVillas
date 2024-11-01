@@ -32,7 +32,9 @@ const Register = () => {
         })
         .catch(error => {
             console.log('The Error from Sign Up : ', error);
-        })
+        });
+
+        form.reset();
     }
 
     return (
