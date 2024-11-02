@@ -9,6 +9,7 @@ import Login from "../pages/Login";
 import RoomDetails from "../components/RoomDetails";
 import Register from "../pages/Register";
 import ProfileUpdate from "../components/ProfileUpdate";
+import About from "../pages/About";
 
 export const router = createBrowserRouter([
     {
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
             {
                 path : "/",
                 element : <Home></Home>
+            },
+            {
+                path : "/about",
+                element : <About></About>
             },
             {
                 path : '/contactUs',
