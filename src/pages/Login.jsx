@@ -1,24 +1,30 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { NavLink } from "react-router-dom"
 import { AuthContext } from "../provider/AuthProvider"
 
 const Login = () => {
 
+
     const {logIn} = useContext(AuthContext);
+    const [errorMessage, setErrorMessage] = useState('');
 
     const handleLogIn = e => {
         e.preventDefault();
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
+
+        setErrorMessage('');
+
         logIn(email, password)
         .then(result => {
             console.log(result.user);
         })
         .catch(error => {
-            console.log(`Error from log in page : ${error}`)
+            console.log(`Error from log in page : ${error}`);
+            setErrorMessage(error.message);
         });
 
         form.reset();
@@ -42,6 +48,10 @@ const Login = () => {
                         </div>
                     </div>
                     <button type="submit" className="block w-full p-3 text-center rounded-sm text-gray-900 bg-violet-400">log in</button>
+
+                    {
+                        errorMessage && <p className="text-red-600">{errorMessage}</p>
+                    }
                 </form>
                 <div className="flex items-center pt-4 space-x-1">
                     <div className="flex-1 h-px sm:w-16 bg-gray-700"></div>
